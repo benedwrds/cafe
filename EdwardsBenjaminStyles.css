@@ -1,0 +1,758 @@
+html{
+  background-color: orange;
+}
+
+ /* font for testing purpose */
+@font-face {
+  font-family: NotoSerifGujarati-Light;
+  src: url(NotoSerifGujarati-Light.ttf);
+}
+
+body{
+  background-color: tan;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-right: 17.5%;
+  /* border for testing purposes (remove when done) */
+  border: 1px solid red; 
+  font-family: NotoSerifGujarati-Light;
+}
+
+footer{
+  /* background-color: orange; */
+  /* practice purposes delete border once complete */
+  /* border: 1px solid red; */
+  height: 60px;
+  width: auto;
+  margin-left: 30%;
+  margin-right: 30%;
+  display: grid;
+  margin-bottom: 5%;
+}
+
+#linksRef, .socialMedia{
+  grid-column: 1;
+  grid-row: 1;
+}
+
+#linksRef{
+  margin-left: 23%;
+}
+
+/* Navbar */
+li{
+  list-style-type: none;
+  text-align: center;
+}
+
+/*///////////////////// Homepage article /////////////////////////*/
+/* make modifications to edit coffee, and plants page */
+article{
+  margin-top: 33%;
+}
+
+article p{
+  clear: left;
+  width: 50%;
+  line-height: 1.2em;
+  /* ;m mf  */
+  margin-left: 7%;
+  letter-spacing: 1.3px; 
+  line-height: 1.5em;
+}
+
+.barista{
+  width: auto;
+  object-fit: contain;
+  border-radius: 25px;
+  margin-left: 9%;
+}
+
+article img{
+  width: 40%;
+  /* padding-left: 9%; */
+}
+
+.cafePeople{
+  margin-left: 9%;
+  border-radius: 25px;
+}
+
+
+
+
+  /*///////////// Coffee Menu Page ////////////////*/
+
+ /* find out how to create padding between each item */
+
+  .coffeeTitle h2{
+      padding-top: 13%;
+      /* margin-left: 25%; */
+      text-align: center;
+  }
+
+  .menuTitle{
+    padding-top: 3%;
+    text-align: center;
+    padding-bottom: 7%;
+  }
+
+
+.coffeeMenu{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* white space for each item */
+  margin-bottom: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+  .coffeeItem{
+    background-color: white;
+    width: 350px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    margin-bottom: 40px;  /*adds space between each item*/
+  }
+
+  .coffeeItem img{
+    height: 98%;
+    width: 35%;
+    border: 2.5px solid black;
+    object-fit: cover;
+    border-top-left-radius: 7.5px;
+    border-bottom-left-radius: 7.5px;
+    /* float: right; */
+  }
+
+  .coffeeItem img:hover{
+    opacity: 0.5;
+  }
+
+  .coffeeItem h3{
+    float: right;
+  }
+
+  .coffeeItem p{
+    clear:right;
+    float: right;
+  }
+
+  /* could use aspects of featured plant styling for each product */
+
+  /* move price in border */
+  .coffeeItem p{
+    margin-top: -3%;
+    margin-right: 13%;
+  }
+
+  /* move text in border */
+  .coffeeItem h3{
+    margin-top: 10%;
+    margin-right: 13%;
+  }
+
+
+   /*////////// Plants page //////////*/
+
+  /* .plantPhoto img{
+    width: 20%;
+  } */
+
+  /* Plant test */
+ /* Alter coffee products to match plant products code flex-direction... */
+  .plantProducts{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* white space for each item */
+    margin-bottom: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+
+  .plantItem{
+    background-color: white;
+    width: 350px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    /* white space for bottom of page */
+    margin-top: 10%;
+  }
+
+  .plantItem img{
+    height: 98%;
+    width: 35%;
+    border: 2.5px solid black;
+    object-fit: cover;
+    border-bottom-left-radius: 7.5px;
+    border-top-left-radius: 7.5px;
+  }
+
+  
+  .plantItem img:hover{
+    opacity: 0.5;
+  }
+
+  .plantItem h3{
+    float: right;
+  }
+
+  .plantItem p{
+    clear:right;
+    float: right;
+  }
+
+  .plantItem p{
+    margin-top: -3%;
+    margin-right: 13%;
+  }
+
+  /* move text in border */
+  .plantItem h3{
+    margin-top: 10%;
+    margin-right: 13%;
+  }
+
+
+
+  .monsteraTitle{
+    width: 65%;
+    /* height: 250px; */
+    object-fit: cover;
+    position: absolute;
+  }
+
+  /* .table{
+    display: none;
+  } */
+
+/* 
+  For Mobile devices: 320px-480px.
+For Tablets or iPad: 480px - 768px.
+For Laptop or small-size screen: 768px -1024px.
+For Desktop or large-size screen: 1024px -1200px. */
+/* 
+@media screen and (min-width: 480px) {
+
+} */
+
+/* @media only screen and (min-width: 600px)  {...} */
+
+/* @media only screen and (max-width: 600px)  {...} */
+
+
+/* Cellphone */
+  /* @media only screen and (max-width: 576px) and (min-width: 320px)*/
+
+  @media(min-width: 320px){
+    footer ul{
+      display: flex;
+      flex-direction: row;
+      margin-left: -20%;
+    }
+
+     footer ul a{
+      margin-left: 10px;
+    }
+
+  }
+
+  @media(min-width: 320px) and (max-width: 768px){
+
+    /* events page*/
+    iframe{
+      display: none;
+    }
+
+    textarea{
+      width: 225%;
+      margin-left: -10%;
+    }
+
+    table{
+      display: none;
+    }
+
+    .formPadding{
+      margin-left: -65px;
+    }
+    /* events page*/
+
+
+    .monsteraTitle{
+      height: 120px;
+    }
+  
+    .navicon{
+      display:block;
+      margin-top: 45%;
+      padding-bottom: 10px;
+      padding-left: 3%;
+    }
+  
+    nav ul{
+      display: none;
+    }
+
+    .naviconHome{
+      margin-top: 50%;
+    }
+  
+    img.navicon:hover + ul{
+      display: block;
+      margin-left: -70%;
+    }
+  
+    nav:hover ul{
+      margin-left: -70%;
+      display: block;
+    }
+  
+    nav a{
+      display: block;
+      margin: 10px;
+      text-decoration: none;
+      color: red;
+    } 
+
+    article{
+      margin-top: 5px;
+    }
+
+    article p{
+      width:85%;
+    }
+
+    .barista, .cafePeople, .featPlant{
+      display: none;
+    }
+
+    #linksRef{
+      white-space: nowrap;
+    }
+
+    #linksRef a{
+      color: red;
+      text-decoration: none;
+    }
+
+  }
+
+  @media (min-width: 576px){
+
+    .navicon{
+      margin-top: 35%;
+    }
+
+    table{
+      display: none;
+    }
+
+
+    textarea{
+      margin-left: -40%;
+    }
+
+    .formPadding{
+      margin-left: -60;
+    }
+
+    textarea{
+      width: 200%;
+    }
+
+    iframe{
+      display: none;
+    }
+
+    .featPlant button{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+  }
+
+  
+  @media (min-width: 576px){
+
+
+  #linksRef, footer{
+    justify-content: center;
+  }
+
+  #linksRef a{
+    color: red;
+    text-decoration: none;
+  }
+
+  footer ul a i{
+    padding-right: 30px;
+  }
+
+
+  article{
+    margin-top: 8%;
+  }
+
+  article p{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 90%;
+  }
+  
+  /*Header Logo*/
+  .monsteraTitle{
+    height: 135px;
+  }
+
+  .featPlant ul{
+    display: none;
+  }
+
+}
+
+/* Tablet */
+/* @media only screen and (max-width: 768px) and (min-width: 577px){ */
+  /* 768 and up*/
+
+  @media (min-width: 712px){
+
+    table{
+      border: 3px solid black;
+      border-collapse: collapse;
+    } 
+
+  }
+
+
+  @media(min-width: 768px){
+
+  .video{
+    margin-right: 76%;
+  }
+
+  .monsteraTitle{
+    height: 150px;
+  }
+
+  nav{
+    margin-top: 28%;
+    margin-left: -3%;
+    margin-bottom: 5%;
+  }
+
+  nav a{
+    margin-left: 15%;
+  }
+
+  a{
+    color: red;
+    float: left;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+  }
+  
+  a:hover{
+    transform: scale(1.3);
+    transition: all .2s ease-in-out;
+  }
+
+  /* change this to header nav bar style only */
+  nav ul li a{
+    margin-left: 8%;
+  }
+
+  /* removes hamburger menu and plant facts*/
+  .navicon, .featPlant ul{
+   display: none;
+  }
+
+  article{
+    margin-top: -1px;
+  }
+
+  .barista{
+    height: 200px;
+    width: auto;
+  }
+
+  .featPlant a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .featPlant button{
+    background-color: gold;
+    border-radius: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .barista, .cafePeople, .featPlant{
+    display: block;
+  }
+
+  article p{
+    margin-left:8%;
+    width: 50%;
+  }
+
+  article{
+    margin-bottom: 10%;
+  }
+
+  div.featPlant{
+    margin-top: -150%;
+  }
+
+  .featPlant{
+    float: left;
+    width: 215px;
+    height: auto;
+    /* margin-top: -225%; */
+  }
+
+  nav ul{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .location{
+    font-weight: bold;
+  }
+
+  /* Events Page */
+  .formPadding{
+    margin-left: -50%;
+  }
+  
+  footer{
+    margin-bottom: 10%;
+  }
+
+ 
+
+}
+
+@media(min-width: 960px){
+  .calender{
+    display: none;
+  }
+
+  table{
+    display: block;
+  }
+
+  iframe{
+    display: block;
+  } 
+
+  .video{
+     margin-left: 6%;
+  }
+
+  #linksRef{
+    margin-left: 16%;
+  }
+
+  footer ul li a{
+    margin-left: -37%;
+  }
+  /* before this width video and calender are not sized properly */
+} 
+
+  /* For Laptop or small-size screen: 768px -1024px. */
+/* @media only screen and (max-width: 1024px) and (min-width: 769px){ */
+  /* Large Devices  992 and up*/
+  @media(min-width: 992px){
+
+  .barista{
+    /* height: 77%; */
+    height: 275px;
+    width: auto;
+  }
+
+  .featPlant ul{
+    display: block;
+  }
+
+  .monsteraTitle{
+    height: 175px;
+  }
+
+  div.featPlant{
+    margin-top: -150%;
+  }
+
+  footer{
+    margin-left: 38%;
+  }
+
+
+  .video{
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+
+}
+
+@media(min-width: 1110px){
+
+ .monsteraTitle{
+    height: 200px;
+  }
+
+  #linksRef{
+    margin-left: 25%;
+  }
+  
+  .socialMedia{
+    margin-left: 1%;
+  }
+
+  #linksRef{
+    margin-left: 10%;
+  }
+
+  .barista{
+    height: 300px;
+  }
+
+  .video{
+    display: flex;
+    justify-content: center;
+  }
+
+  div.featPlant{
+    margin-top: -120%;
+  }
+}
+
+
+/* For Desktop or large-size screen: 1024px -1200px. */ 
+/* @media only screen and(max-width: 1280px) and (min-width: 1024px){ */
+  /* X Large Devices */
+@media(min-width:1350px){
+
+  .monsteraTitle{
+    height: 225px;
+  }
+
+  #linksRef{
+    margin-left: 12%;
+  }
+
+  footer{
+    margin-left: 40%;
+  }
+
+  /* div.featPlant{
+    padding-top: -120%;
+  }   */
+
+  /* nav bar */
+  nav{
+    margin-top: 27%;
+  }
+
+  .barista{
+    height: 310px;
+  }
+
+}
+
+@media (min-width: 1500px){
+
+  nav{
+    margin-top: 23%;
+  }
+
+  footer{
+    margin-left: 40%;
+  }
+
+}
+
+div.featPlant{
+  margin-top: -100%;
+}
+
+.featPlant a{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*////////////// Featured plant //////////*/
+/* moves entire object (border, img, text)  */
+.featPlant{
+  background-color: white;
+  width: 20%;
+  padding-bottom: 8%;
+  border: 2.5px solid black;
+  border-radius: 25px;
+  float: right;
+  margin-right: 10%;
+  margin-top: -125%;
+}
+
+.featPlant img{
+  width: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featPlant h2, .featPlant h3{
+  text-align: center;
+}
+
+.featPlant ul{
+  margin-left: -33px;
+}
+
+i{
+  color: red;
+  font-size: 1.3em;
+}
+
+.events{
+  margin-left: 20%;
+}
+
+table{
+  margin-left: 13%;
+  margin-right: 13%;
+  border: 3px solid black;
+  border-collapse: collapse;
+}
+
+th, td{
+  border: 1px solid black;
+  padding: 0.5rem;
+}
+
+form{
+  margin-left: 32%;
+  margin-right: 32%;
+}
+
+.formPadding{
+  margin-top: 5px;
+}
+
+.submitButton{
+  margin-top: 5px;
+}
